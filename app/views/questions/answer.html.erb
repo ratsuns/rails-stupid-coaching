@@ -1,0 +1,18 @@
+<div class="container">
+<h1>Answer</h1>
+<p><%= @new_question %></p>
+  <% if @new_question.include? "?" %>
+    <p>Silly question, get dressed and go to work!</p>
+  <% elsif @new_question == "going to work" %>
+    <p>Great!</p>
+  <% else %>
+    <p>I don't care, get dressed and go to work!</p>
+<% end %>
+
+<%= link_to "Ask another question?", ask_path %>
+</div>
+
+
+
+
+
